@@ -27,12 +27,10 @@ public class BresenhamLineDrawer implements LineDrawer {
         }
 
         if (dy < dx) {
-            // Начальные значения
             int x = x1;
             int y = y1;
             int d = -dx;
 
-            // Основной цикл
             length++;
             while (length > 0) {
                 pd.drawPixel(x, y, Color.red);
@@ -45,12 +43,10 @@ public class BresenhamLineDrawer implements LineDrawer {
                 length--;
             }
         } else {
-            // Начальные значения
             int x = x1;
             int y = y1;
             int d = -dy;
 
-            // Основной цикл
             length++;
             while (length> 0) {
                 pd.drawPixel(x, y, Color.red);
